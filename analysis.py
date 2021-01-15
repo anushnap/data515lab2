@@ -4,7 +4,7 @@ import sys
 def download_data(dataset):
 	if (dataset == 'fremont'):
 		dataframe = pd.read_csv('https://data.seattle.gov/api/views/65db-xm6k/rows.csv?accessType=DOWNLOAD')
-	elif (dataset == 'spokane
+	elif (dataset == 'spokane'):
 		dataframe = pd.read_csv('https://data.seattle.gov/api/views/upms-nr8w/rows.csv?accessType=DOWNLOAD')
 	return dataframe
 
