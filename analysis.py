@@ -9,6 +9,7 @@ def download_data(dataset):
 	return dataframe
 
 if __name__ == "__main__":
-	data = download_data(dataset)
-	print(data)
-
+	if len(sys.argv) >= 2:
+		print(download_data(sys.argv[1]))
+	else:
+		print(download_data())
